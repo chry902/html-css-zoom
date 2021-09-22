@@ -5,7 +5,7 @@ body{
 *{
     box-sizing: border-box;
     margin: 0;
-    border: 0;
+    padding: 0;
 }
 
 .contain-flex{
@@ -14,10 +14,9 @@ display: flex;
 /****header*******
 ******************/
 header{
-    border-radius: 8px;
-    
+    border-top-left-radius: 8px;
+    border-top-right-radius: ;
     background-color: lightgray;
-    
     align-items: center;
     width: 100%;
 }
@@ -123,13 +122,13 @@ width: 80%;
 margin: auto;
 flex-wrap: wrap;
 justify-content:center ;
-
+padding-bottom: 3rem;
 }
 .foto{
     position: relative;
     
-    width: 250px;
-    height: 150px;
+    width: 290px;
+    height: 155px;
     margin: 5px;
 }
 .foto> img{
@@ -158,28 +157,30 @@ justify-content:center ;
 /*** nav *******
 ****************/
 nav{
-    justify-content: space-around;
+    
+    justify-content: space-between;
     width: 100%;
     flex-wrap: wrap;
-    background-color:rgba(33, 35, 36, 1);
+    background-color: rgba(33, 35, 36, 1);
 }
 .sinistra{  
-
+    padding-top: 5px;
     flex-wrap: wrap; 
     color: white;
     
 }
 .sinistra> div{
     text-align: center;
-    padding-left: 3rem;
+    padding-left: 2rem;
 }
-.centro{    
+.centro{  
+    padding-top: 5px;  
     color: white;
     
 }
 .centro> div{
     text-align: center;
-    padding-left: 3rem;
+    padding-left: 2rem;
 }
 .fa-laptop{
     color: rgba(79, 196, 34, 1);
@@ -189,5 +190,8 @@ nav{
     height: 100%;
     background-color: rgba(75, 76, 79, 1);
     padding: 1rem;
+    
 }
+
+
 
